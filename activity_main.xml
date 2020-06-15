@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnONOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="ON/OFF"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btnDiscoverable_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:onClick="btnEnableDisable_Discoverable"
+        android:text="Enable Discoverable"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="116dp" />
+
+    <Button
+        android:id="@+id/btnFindUnpairedDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnDiscover"
+        android:text="Discover"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <ListView
+        android:id="@+id/lvNewDevices"
+        android:layout_width="415dp"
+        android:layout_height="419dp"
+        android:layout_below="@id/btnFindUnpairedDevices"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="263dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
